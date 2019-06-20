@@ -1,0 +1,70 @@
+<html>
+        <head>
+                <title>Gate opener</title>
+                <link rel="shortcut icon" type="image/x-icon" href="icoColor3.png">
+<style>
+.button {
+  padding: 15px 25px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  height:10%;
+  width:60%;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+.button:active {
+ background-color: green;
+ box-shadow: 0 5px #666;
+ transform: translateY(4px);
+}
+</style>
+
+
+        </head>
+        <body style="background-color: #DADAD8">
+
+                <center><div style="font-weight:bold; font-size: 400%">OPENER</div></center>
+
+                <hr style="border-bottom: 1px solid" >
+
+                <iframe width="0" height="0" border="0" name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+
+                <center><img src="gate.png" width="30%"></center>
+
+                <form action="./cgi-bin/openGate.py" target="dummyframe">
+
+                        <center><INPUT class="button" TYPE="submit" VALUE="GATE"></center>
+                        <!--    <center><INPUT TYPE="submit" VALUE="GATE" style="height:10%; width:80%; background: green; color: white; border-style: outset; border color: #0066A2; font: bold 200% arial, sans-serif; border-radius: 20px"></center> -->
+                </form>
+
+                <br>
+                <br>
+                <hr style="border-bottom: 1px solid" >
+                <br>
+                <br>
+
+                <center><img src="door2.png" width="25%" ></center>
+
+                <br>
+                <br>
+                <form action="./cgi-bin/openGarageDoor.py" target="dummyframe">
+
+                        <center><INPUT class="button" TYPE="submit" VALUE="GARAGE"></center>
+                </form>
+
+
+                <br>
+                <br>
+                <hr style="border-bottom: 1px solid" >
+
+        </body>
+</html>
