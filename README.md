@@ -15,8 +15,11 @@ apt-get install python3-rpi.gpio
 
 
 V kofiguraci lighttpd CGI  - zakomentovat
+
     $HTTP["url"] =~ "^/cgi-bin" {
+    
         cgi.assign = ( "" => "" )
+        
     }
     
     
